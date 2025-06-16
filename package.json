@@ -8,16 +8,30 @@
     "dev": "nodemon src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["credit", "api", "referral", "ledger"],
+  "keywords": [
+    "credit",
+    "api",
+    "referral",
+    "ledger"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2",
-    "mongoose": "^7.6.3",
+    "@radix-ui/react-checkbox": "^1.3.2",
+    "@radix-ui/react-label": "^2.1.7",
+    "@radix-ui/react-select": "^2.2.5",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@radix-ui/react-tabs": "^1.1.12",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
     "helmet": "^7.1.0",
-    "express-rate-limit": "^7.1.5"
+    "lucide-react": "^0.515.0",
+    "mongoose": "^7.6.3",
+    "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
@@ -25,4 +39,4 @@
   "engines": {
     "node": ">=18.0.0"
   }
-} 
+}
