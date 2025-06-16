@@ -32,7 +32,7 @@ app.use(limiter);
 // CORS configuration
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? process.env.ALLOWED_ORIGINS?.split(',') || false
+    ? process.env.ALLOWED_ORIGINS?.split(',') || true
     : true,
   credentials: true
 }));
