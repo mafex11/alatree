@@ -113,7 +113,13 @@ export default function Dashboard() {
   const loadSystemStats = async () => {
     const result = await makeRequest('GET', '/api/credits/system/stats');
     if (result.success) {
-      setSystemStats(result);
+      setSystemStats({
+        totalCredits: result.totalCredits || 0,
+        totalEvents: result.totalEvents || 0,
+        uniqueUsers: result.uniqueUsers || 0,
+        recentActivity: result.recentActivity || 0,
+        creditsByAction: result.creditsByAction || {}
+      });
     }
   };
 
